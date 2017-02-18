@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Crunch Time</string>
+
+    <string-array name="exercises_array">
+        <item>Pushup</item>
+        <item>Situp</item>
+        <item>Squats</item>
+        <item>Plank</item>
+        <item>Jumping Jacks</item>
+        <item>Pullup</item>
+        <item>Cycling</item>
+        <item>Walking</item>
+        <item>Jogging</item>
+        <item>Swimming</item>
+        <item>Stair-Climbing</item>
+    </string-array>
+</resources>

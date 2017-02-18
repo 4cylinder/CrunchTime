@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:text="Assume you weigh 150 lb." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/goalLabelHead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="My goal is to burn"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calories"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:digits="0123456789."
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/goalLabelEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="calories."
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How should I exercise?"/>
+
+    <TextView
+        android:id="@+id/exercises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines = "15"
+        android:scrollbars = "vertical"
+        android:freezesText="true"
+        android:textSize="20sp"/>
+</LinearLayout>
